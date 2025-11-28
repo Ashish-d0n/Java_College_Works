@@ -1,4 +1,2 @@
 ﻿# College_Lab_work
 This is college lab works
-
-This is File of Javaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
