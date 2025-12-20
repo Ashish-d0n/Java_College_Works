@@ -1,0 +1,4 @@
+/* 
+Demonstrate upcasting by creating an object of a subclass and
+assigning it to a reference variable of the superclass type.
+*/
