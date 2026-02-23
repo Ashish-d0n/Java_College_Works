@@ -1,0 +1,12 @@
+#LoginBtn{
+    -fx-border-radius:5px;
+}
+
+#LoginBtn:hover{
+    -fx-background-color:#d3b049;
+    -fx-cursor:hand;
+}
+
+.text-field:focused{
+    -fx-border-width:0 0 1 1;
+}
