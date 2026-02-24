@@ -1,12 +1,23 @@
-#LoginBtn{
-    -fx-border-radius:5px;
+.Userlogo{
+    -fx-color:#3b3b3bd8;
+}
+.Signn{
+    -fx-color:#a8a8a8;
 }
 
-#LoginBtn:hover{
+.LoginBtn{
+    -fx-border-radius:10px;
+}
+
+.LoginBtn:hover{
     -fx-background-color:#d3b049;
     -fx-cursor:hand;
 }
 
 .text-field:focused{
+    -fx-border-width:0 0 1 1;
+}
+
+.password-field:focused{
     -fx-border-width:0 0 1 1;
 }
