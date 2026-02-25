@@ -4,7 +4,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,45 +14,27 @@ import java.sql.SQLException;
 public class JavaP extends Application {
 
     private static Scene scene;
-    private double x = 0;
-    private double y = 0;
 
+    // Database credentials
     private static final String URL = "jdbc:mysql://localhost:3306/hotel_db";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
     @Override
-    public void start(Stage stage) {
-        try {
-           
-            Parent root = loadFXML("primary");
-            scene = new Scene(root);
+    public void start(Stage stage) throws IOException {
 
-            
-            root.setOnMousePressed((MouseEvent event) -> {
-                x = event.getSceneX();
-                y = event.getSceneY();
-            });
+        
+        scene = new Scene(loadFXML("primary"));
 
-            root.setOnMouseDragged((MouseEvent event) -> {
-                stage.setX(event.getScreenX() - x);
-                stage.setY(event.getScreenY() - y);
-            });
+       
+        applyCSS("primary");
 
-            
-            String css = getClass().getResource("/com/hotel/rightsignin.css").toExternalForm();
-            scene.getStylesheets().add(css);
-
-            stage.setTitle("Hotel Management");
-            stage.setScene(scene);
-            stage.show();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        stage.setTitle("Hotel Management System");
+        stage.setScene(scene);
+        stage.show();
     }
 
-   
+    
     public static Connection connectDatabase() {
         try {
             Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
@@ -69,11 +50,33 @@ public class JavaP extends Application {
     
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
+        applyCSS(fxml);
     }
 
+   
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(JavaP.class.getResource("/com/hotel/" + fxml + ".fxml"));
-        return fxmlLoader.load();
+        FXMLLoader loader =
+                new FXMLLoader(JavaP.class.getResource("/com/hotel/" + fxml + ".fxml"));
+        return loader.load();
+    }
+
+    
+    private static void applyCSS(String fxml) {
+
+        scene.getStylesheets().clear();
+
+        if (fxml.equals("primary")) {
+            scene.getStylesheets().add(
+                    JavaP.class.getResource("/com/hotel/rightsignin.css")
+                            .toExternalForm()
+            );
+        }
+        else if (fxml.equals("secondary")) {
+            scene.getStylesheets().add(
+                    JavaP.class.getResource("/com/hotel/Adminleft.css")
+                            .toExternalForm()
+            );
+        }
     }
 
     public static void main(String[] args) {

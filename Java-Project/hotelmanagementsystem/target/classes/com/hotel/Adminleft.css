@@ -1,0 +1,95 @@
+.Dashboard {
+    -fx-background-color: linear-gradient(to right, #3939B3, #00D4FF);
+
+}
+.shadow {
+    -fx-background-color: #fff; /* dark gray background */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 20, 0, 0, 0);
+}
+.Dmlup {
+    -fx-border-color: #fff;
+    -fx-background-radius: 5px;
+    -fx-background-color: #F0F8FF;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); /* subtle glow */
+}
+.Dmldown {
+    -fx-border-color: #fff;
+    -fx-background-radius: 5px;
+    -fx-background-color: #F0F8FF;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); /* subtle glow */
+}
+
+.table{
+    -fx-background-color:transparent;
+    -fx-padding:0px;
+    -fx-border-color:transparent;
+
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent; 
+}
+
+
+.table-view .column-header, 
+.table-view .column-header .label, 
+.table-view .column-header .arrow-button {
+    -fx-background-color: linear-gradient(to right, #3939B3, #00D4FF);
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+     
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.Signoutbtn{
+   
+    -fx-border-color: #333;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: rgb(148, 232, 51);
+    -fx-background-color:transparent;
+}
+
+.Addbtn{
+   
+    -fx-border-color:transparent;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: rgb(21, 21, 20);
+    -fx-background-color:#FDC745;
+}
+.Updatebtn{
+   
+    -fx-border-color:transparent;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: rgb(21, 21, 20);
+    -fx-background-color:#9AE630;
+}
+.Clear{
+   
+    -fx-border-color:transparent;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: rgb(21, 21, 20);
+    -fx-background-color:#3BB8DB;
+}
+.Delete{
+   
+    -fx-border-color:transparent;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: rgb(21, 21, 20);
+    -fx-background-color:#FFA1AD;
+}
+
+.Signoutbtn:hover {
+    -fx-background-color: #c9b2d2;
+    -fx-cursor: hand;
+}
+
