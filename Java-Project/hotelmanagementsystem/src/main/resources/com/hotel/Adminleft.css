@@ -3,20 +3,20 @@
 
 }
 .shadow {
-    -fx-background-color: #fff; /* dark gray background */
+    -fx-background-color: #fff; 
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 20, 0, 0, 0);
 }
 .Dmlup {
     -fx-border-color: #fff;
     -fx-background-radius: 5px;
     -fx-background-color: #F0F8FF;
-    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); /* subtle glow */
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); 
 }
 .Dmldown {
     -fx-border-color: #fff;
     -fx-background-radius: 5px;
     -fx-background-color: #F0F8FF;
-    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); /* subtle glow */
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); 
 }
 
 .table{
@@ -63,6 +63,10 @@
     -fx-text-fill: rgb(21, 21, 20);
     -fx-background-color:#FDC745;
 }
+.Addbtn:hover{
+
+    -fx-background-color:#F0B13B;
+}
 .Updatebtn{
    
     -fx-border-color:transparent;
@@ -70,6 +74,9 @@
     -fx-border-radius: 8px;
     -fx-text-fill: rgb(21, 21, 20);
     -fx-background-color:#9AE630;
+}
+.Updatebtn:hover{
+    -fx-background-color:#5EA529
 }
 .Clear{
    
@@ -79,6 +86,9 @@
     -fx-text-fill: rgb(21, 21, 20);
     -fx-background-color:#3BB8DB;
 }
+.Clear:hover{
+    -fx-background-color:#1A7595;
+}
 .Delete{
    
     -fx-border-color:transparent;
@@ -86,6 +96,9 @@
     -fx-border-radius: 8px;
     -fx-text-fill: rgb(21, 21, 20);
     -fx-background-color:#FFA1AD;
+}
+.Delete:hover{
+    -fx-background-color:#E61876;
 }
 
 .Signoutbtn:hover {

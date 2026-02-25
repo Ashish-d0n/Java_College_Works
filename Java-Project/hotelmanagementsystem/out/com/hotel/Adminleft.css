@@ -3,20 +3,20 @@
 
 }
 .shadow {
-    -fx-background-color: #fff; 
+    -fx-background-color: #fff; /* dark gray background */
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 20, 0, 0, 0);
 }
 .Dmlup {
     -fx-border-color: #fff;
     -fx-background-radius: 5px;
     -fx-background-color: #F0F8FF;
-    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); 
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); /* subtle glow */
 }
 .Dmldown {
     -fx-border-color: #fff;
     -fx-background-radius: 5px;
     -fx-background-color: #F0F8FF;
-    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); 
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.2), 5, 0, 0, 0); /* subtle glow */
 }
 
 .table{

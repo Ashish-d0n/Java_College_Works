@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -47,6 +46,7 @@ public class JavaP extends Application {
         return null;
     }
 
+    
     
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
